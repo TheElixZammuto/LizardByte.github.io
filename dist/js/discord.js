@@ -23,5 +23,5 @@ fetch('https://app.lizardbyte.dev/uno/random-quotes/games.json').then(r => r.jso
         if (crate) {
             randomQuote(quote, crate)
         }
-    }, 7 * 60 * 1000);
+    }, 7 * 60 * 1000)
 });
