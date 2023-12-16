@@ -1,5 +1,5 @@
 function randomQuote(quote, crate) {
-    let the_quote = quote['quote_safe'] || quote['quote'];
+    let the_quote = quote['quote_safe'] || quote['quote']
     crate.notify(the_quote)
 }
 
