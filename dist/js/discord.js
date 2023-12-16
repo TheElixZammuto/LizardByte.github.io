@@ -19,7 +19,7 @@ document.head.appendChild(widgetbot)
 // get random video game quotes and notify the user on Widgetbot after 7 minutes
 fetch(`https://app.lizardbyte.dev/uno/random-quotes/games.json`).then(r => r.json()).then(result => {
     let quote = result[Math.floor(Math.random() * result.length)]
-    setTimeout(()=>{
+    setTimeout(() => {
         if(crate)randomQuote(quote,crate);
     }, 7 * 60 * 1000);
 });
