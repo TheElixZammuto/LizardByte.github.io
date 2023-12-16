@@ -20,6 +20,8 @@ document.head.appendChild(widgetbot)
 fetch(`https://app.lizardbyte.dev/uno/random-quotes/games.json`).then(r => r.json()).then(result => {
     let quote = result[Math.floor(Math.random() * result.length)]
     setTimeout(() => {
-        if(crate)randomQuote(quote,crate);
+        if (crate) {
+            randomQuote(quote, crate)
+        }
     }, 7 * 60 * 1000);
 });
